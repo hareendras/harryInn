@@ -6,6 +6,7 @@ $(function() {
   var slide_index = 0;
 
   ul.find("li").each(function(indx) {
+    console.log("hihihih");
     var left_percent = slide_width_pc * indx + "%";
     $(this).css({ left: left_percent });
     $(this).css({ width: 100 / slide_count + "%" });
