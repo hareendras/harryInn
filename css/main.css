@@ -308,13 +308,6 @@ h6 {
   margin-top: 0px;
 }
 
-.mainSlidecontainer {
-  margin: 10px;
-  margin-top: 5px;
-  background-color: #fff;
-  height: 100%;
-}
-
 .desc {
   margin: 10px;
   text-align: center;
@@ -326,4 +319,29 @@ h6 {
 
 .cat1text {
   text-align: center;
+  margin: 10px;
+}
+
+.mainSlidecontainer {
+  margin: 10px;
+  margin-top: 5px;
+  background-color: #fff;
+  height: 100%;
+}
+
+#roomSlider ul {
+  list-style: none;
+  padding: 0;
+}
+
+#roomSlider li {
+  list-style: none;
+  top: 0;
+  left: 0;
+}
+
+#roomSlider li img {
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
 }
