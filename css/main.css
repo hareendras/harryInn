@@ -305,7 +305,8 @@ h6 {
 #mapid {
   height: 300px;
   margin: 10px;
-  margin-top: 0px;
+  margin-top: 50%;
+  
 }
 
 .desc {
@@ -343,5 +344,7 @@ h6 {
 #roomSlider li img {
   object-fit: cover;
   width: 100%;
-  position: absolute;
+  position: absolute;  
+  display: inline-block;
+ 
 }

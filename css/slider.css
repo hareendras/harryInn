@@ -27,8 +27,7 @@
 }
 
 .slider li img {
-  border: none;
-  max-width: 100%;
+  border: none;  
   height: 100%;
   object-fit: cover;
 }
