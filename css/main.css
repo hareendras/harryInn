@@ -305,7 +305,6 @@ h6 {
 #mapid {
   height: 300px;
   margin: 10px;
-  margin-top: 50%;
   
 }
 
@@ -326,25 +325,76 @@ h6 {
 .mainSlidecontainer {
   margin: 10px;
   margin-top: 5px;
+  margin-right: 20px;
   background-color: #fff;
   height: 100%;
 }
 
-#roomSlider ul {
+#roomSlider {
   list-style: none;
-  padding: 0;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
 }
 
-#roomSlider li {
-  list-style: none;
-  top: 0;
-  left: 0;
-}
+#roomSlider {
+  display: flex;
+  overflow-x: auto;
 
-#roomSlider li img {
-  object-fit: cover;
+  border-radius: 5px;
+
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+}
+#roomSlider::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+#roomSlider::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+#roomSlider::-webkit-scrollbar-track {
+  background: transparent;
+}
+#roomSlider img {
   width: 100%;
-  position: absolute;  
-  display: inline-block;
- 
+  object-fit: cover;
+
+  flex-shrink: 0;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.roomSlide {
+  width: 100%;
+  flex-shrink: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide-wrapper > a {
+  display: inline-flex;
+  flex-direction: row;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: black;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
 }

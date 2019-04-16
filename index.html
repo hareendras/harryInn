@@ -71,20 +71,24 @@
         water.
       </div>
 
-      <div id="roomSlider" class="mainSlidecontainer grid">
-        <ul>
-          <li>
-            <img src="./img/1.jpg" />
-          </li>
-          <li>
-            <img src="./img/2.jpg" />
-          </li>
-          <li>
-            <img src="./img/3.jpg" />
-          </li>
-        </ul>
-        <button class="prev">prev</button>
-        <button class="next">next</button>
+      <div class="mainSlidecontainer grid">
+        <div class="slide-wrapper">
+          <a href="#slide1">1</a>
+          <a href="#slide2">2</a>
+          <a href="#slide3">3</a>
+
+          <div id="roomSlider">
+            <div class="roomSlide" id="slide1">
+              <img src="./img/1.jpg" />
+            </div>
+            <div class="roomSlide" id="slide2">
+              <img src="./img/2.jpg" />
+            </div>
+            <div class="roomSlide" id="slide3">
+              <img src="./img/3.jpg" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
