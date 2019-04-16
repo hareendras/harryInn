@@ -25,7 +25,6 @@
     />
 
     <title>Harry Inn</title>
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <script
       src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
@@ -39,21 +38,26 @@
       <h2 id="main-heading" class="main-heading">Harry Inn</h2>
     </section>
 
-    <section id="slideMain" class="mainSlidecontainer grid">
-      <div class="slider">
-        <ul>
-          <li>
-            <img src="./img/1.jpg" />
-          </li>
-          <li>
-            <img src="./img/2.jpg" />
-          </li>
-          <li>
-            <img src="./img/3.jpg" />
-          </li>
-        </ul>
-        <button class="prev">prev</button>
-        <button class="next">next</button>
+    <section class="mainSlidecontainer grid">
+      <div class="mainSlidecontainer grid">
+        <div class="slide-wrapper">
+          <div id="roomSlider">
+            <div class="roomSlide" id="slide1.1">
+              <img src="./img/1.jpg" />
+            </div>
+            <div class="roomSlide" id="slide2.1">
+              <img src="./img/2.jpg" />
+            </div>
+            <div class="roomSlide" id="slide3.1">
+              <img src="./img/3.jpg" />
+            </div>
+          </div>
+          <div class="slideNav">
+            <a href="#slide1.1"></a>
+            <a href="#slide2.1"></a>
+            <a href="#slide3.1"></a>
+          </div>
+        </div>
       </div>
     </section>
     <section id="desc" class="desc grid">
@@ -73,10 +77,6 @@
 
       <div class="mainSlidecontainer grid">
         <div class="slide-wrapper">
-          <a href="#slide1">1</a>
-          <a href="#slide2">2</a>
-          <a href="#slide3">3</a>
-
           <div id="roomSlider">
             <div class="roomSlide" id="slide1">
               <img src="./img/1.jpg" />
@@ -87,6 +87,11 @@
             <div class="roomSlide" id="slide3">
               <img src="./img/3.jpg" />
             </div>
+          </div>
+          <div class="slideNav">
+            <a href="#slide1"></a>
+            <a href="#slide2"></a>
+            <a href="#slide3"></a>
           </div>
         </div>
       </div>
@@ -116,7 +121,5 @@
         }
       ).addTo(mymap);
     </script>
-
-    <script src="js/slider.js"></script>
   </body>
 </html>
