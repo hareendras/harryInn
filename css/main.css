@@ -314,6 +314,7 @@ h6 {
 #mapid {
   height: 300px;
   margin: 10px;
+  border-radius: 5px;
 }
 
 
@@ -355,7 +356,7 @@ h6 {
 }
 
 #roomSlider img {
-  width: 100%;
+  width: 100%;  
   object-fit: cover;
   border-radius: 5px;
   flex-shrink: 0;
@@ -374,6 +375,10 @@ h6 {
 .roomSlide {
   width: 100%;
   flex-shrink: 0; 
+}
+
+.roomSlider > .roomSlide:target {
+  transform: scale(0.8);
 }
 
 .slideNav {

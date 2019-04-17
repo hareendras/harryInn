@@ -74,34 +74,39 @@
         We provide cozy double rooms fully air conditioned, free wifi and hot
         water.
       </div>
-
-      <div class="mainSlidecontainer grid">
-        <div class="slide-wrapper">
-          <div id="roomSlider">
-            <div class="roomSlide" id="slide1">
-              <img src="./img/1.jpg" />
+      <section class="mainSlidecontainer grid">
+        <div class="mainSlidecontainer grid">
+          <div class="slide-wrapper">
+            <div id="roomSlider">
+              <div class="roomSlide" id="slide1">
+                <img src="./img/1.jpg" />
+              </div>
+              <div class="roomSlide" id="slide2">
+                <img src="./img/2.jpg" />
+              </div>
+              <div class="roomSlide" id="slide3">
+                <img src="./img/3.jpg" />
+              </div>
             </div>
-            <div class="roomSlide" id="slide2">
-              <img src="./img/2.jpg" />
+            <div class="slideNav">
+              <a href="#slide1"></a>
+              <a href="#slide2"></a>
+              <a href="#slide3"></a>
             </div>
-            <div class="roomSlide" id="slide3">
-              <img src="./img/3.jpg" />
-            </div>
-          </div>
-          <div class="slideNav">
-            <a href="#slide1"></a>
-            <a href="#slide2"></a>
-            <a href="#slide3"></a>
           </div>
         </div>
-      </div>
+      </section>
     </section>
+
+    <h4 id="roomsTitle" class="roomsTitle">Our Location</h4>
 
     <section id="map" class="grid">
       <div id="mapid"></div>
     </section>
-
-    <section id="footer" class="grid"></section>
+    
+    
+  
+    <section id="footer" class="grid">My footer</section>
     <script>
       var mymap = L.map("mapid").setView([7.23642, 79.842675], 16);
       var marker = L.marker([7.23642, 79.842675]).addTo(mymap);
