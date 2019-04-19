@@ -39,92 +39,87 @@
   </head>
 
   <body>
-    <section id="logo" class="grid">
-      <h2 id="main-heading" class="main-heading">Harry Inn</h2>
-    </section>
+    <div class="container">
+      <section id="logo" class="grid">
+        <h2 id="main-heading" class="main-heading">Harry Inn</h2>
+      </section>
 
-    <section class="mainSlidecontainer grid">
-      <div class="mainSlidecontainer grid">
-        <div class="slide-wrapper">
+      <section class="mainSlidecontainer grid">
+        <div id="roomSlider">
+          <div class="roomSlide" id="slide1.1">
+            <img src="./img/1.jpg" />
+          </div>
+          <div class="roomSlide" id="slide2.1">
+            <img src="./img/2.jpg" />
+          </div>
+          <div class="roomSlide" id="slide3.1">
+            <img src="./img/3.jpg" />
+          </div>
+        </div>
+        <div class="slideNav">
+          <a href="#slide1.1"></a>
+          <a href="#slide2.1"></a>
+          <a href="#slide3.1"></a>
+        </div>
+      </section>
+      <section id="desc" class="desc grid">
+        Harry Inn is located in Negombo Sri Lanka, beautiful coastal city few
+        kilometers away from Bandaranayake International Airport Colombo. We
+        have elegant accommodation right in center of tourism hub in Negombo
+        with easy access to popular restaurants, fine dining and golden beaches
+        in Negombo.
+      </section>
+
+      <section id="rooms" class="rooms grid">
+        <h4 id="roomsTitle" class="roomsTitle">Our rooms</h4>
+
+        <div id="cat1text" class="cat1text">
+          We provide cozy double rooms fully air conditioned, free wifi and hot
+          water.
+        </div>
+        <section class="mainSlidecontainer grid">
           <div id="roomSlider">
-            <div class="roomSlide" id="slide1.1">
+            <div class="roomSlide" id="slide1">
               <img src="./img/1.jpg" />
             </div>
-            <div class="roomSlide" id="slide2.1">
+            <div class="roomSlide" id="slide2">
               <img src="./img/2.jpg" />
             </div>
-            <div class="roomSlide" id="slide3.1">
+            <div class="roomSlide" id="slide3">
               <img src="./img/3.jpg" />
             </div>
           </div>
           <div class="slideNav">
-            <a href="#slide1.1"></a>
-            <a href="#slide2.1"></a>
-            <a href="#slide3.1"></a>
+            <a href="#slide1"></a>
+            <a href="#slide2"></a>
+            <a href="#slide3"></a>
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="desc" class="desc grid">
-      Harry Inn is located in Negombo Sri Lanka, beautiful coastal city few
-      kilometers away from Bandaranayake International Airport Colombo. We have
-      elegant accommodation right in center of tourism hub in Negombo with easy
-      access to popular restaurants, fine dining and golden beaches in Negombo.
-    </section>
+        </section>
+      </section>
 
-    <section id="rooms" class="rooms grid">
-      <h4 id="roomsTitle" class="roomsTitle">Our rooms</h4>
+      <h4 id="roomsTitle" class="roomsTitle">Our Location</h4>
 
-      <div id="cat1text" class="cat1text">
-        We provide cozy double rooms fully air conditioned, free wifi and hot
-        water.
-      </div>
-      <section class="mainSlidecontainer grid">
-        <div class="mainSlidecontainer grid">
-          <div class="slide-wrapper">
-            <div id="roomSlider">
-              <div class="roomSlide" id="slide1">
-                <img src="./img/1.jpg" />
-              </div>
-              <div class="roomSlide" id="slide2">
-                <img src="./img/2.jpg" />
-              </div>
-              <div class="roomSlide" id="slide3">
-                <img src="./img/3.jpg" />
-              </div>
-            </div>
-            <div class="slideNav">
-              <a href="#slide1"></a>
-              <a href="#slide2"></a>
-              <a href="#slide3"></a>
-            </div>
+      <section id="map" class="grid">
+        <div id="mapid"></div>
+      </section>
+
+      <section id="footer" class="grid">
+        <div class="footer-content">
+          <div class="contact"><h5>CONTACT</h5></div>
+          <div class="Address">
+            No 74 Ettukala Road,<br />
+            Negombo<br />
+            Sri Lanka
+          </div>
+          <div class="social">
+            <i class="fab fa-facebook-f fa-2x sico"> </i>
+            <i class="fab fa-whatsapp fa-2x sico"> </i>
+            <i class="fab fa-facebook-messenger fa-2x sico"> </i>
+            <i class="fab fa-instagram fa-2x sico"> </i>
           </div>
         </div>
       </section>
-    </section>
-
-    <h4 id="roomsTitle" class="roomsTitle">Our Location</h4>
-
-    <section id="map" class="grid">
-      <div id="mapid"></div>
-    </section>
-
-    <section id="footer" class="grid">
-      <div class="footer-content">
-        <div class="contact"><h5>CONTACT</h5></div>
-        <div class="Address">
-          No 74 Ettukala Road,<br />
-          Negombo<br />
-          Sri Lanka
-        </div>
-        <div class="social">
-            <i class="fab fa-facebook-f fa-2x sico"> </i>  
-          <i class="fab fa-whatsapp fa-2x sico"> </i>
-          <i class="fab fa-facebook-messenger fa-2x sico"> </i>                 
-          <i class="fab fa-instagram fa-2x sico"> </i>
-        </div>
-      </div>
-    </section>
+    </div>
     <script>
       var mymap = L.map("mapid").setView([7.23642, 79.842675], 16);
       var marker = L.marker([7.23642, 79.842675]).addTo(mymap);
