@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/slider.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Grand+Hotel"
       rel="stylesheet"
@@ -103,10 +108,23 @@
     <section id="map" class="grid">
       <div id="mapid"></div>
     </section>
-    
-    
-  
-    <section id="footer" class="grid">My footer</section>
+
+    <section id="footer" class="grid">
+      <div class="footer-content">
+        <div class="contact"><h5>CONTACT</h5></div>
+        <div class="Address">
+          No 74 Ettukala Road,<br />
+          Negombo<br />
+          Sri Lanka
+        </div>
+        <div class="social">
+            <i class="fab fa-facebook-f fa-2x sico"> </i>  
+          <i class="fab fa-whatsapp fa-2x sico"> </i>
+          <i class="fab fa-facebook-messenger fa-2x sico"> </i>                 
+          <i class="fab fa-instagram fa-2x sico"> </i>
+        </div>
+      </div>
+    </section>
     <script>
       var mymap = L.map("mapid").setView([7.23642, 79.842675], 16);
       var marker = L.marker([7.23642, 79.842675]).addTo(mymap);

@@ -269,11 +269,14 @@ textarea {
 /* =====================User styles begins===================================================== */
 
 * {
+  margin : 0;
+  padding : 0;
   box-sizing: border-box;
 }
 body {
   font-family: "Chivo", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: large;
 }
 
 h1,
@@ -303,8 +306,8 @@ h6 {
 }
 
 .grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  
 }
 
 #map {
@@ -398,3 +401,35 @@ h6 {
   margin: 1%; 
   position: relative;
 }
+
+
+
+.footer-content {
+  text-align: center;
+  text-align: center;
+  background-color: #1c0f13;
+  color: #e2e2e2;
+  border-radius: 5px;
+  margin: 10px;
+  padding-bottom: 10px;
+
+  }
+
+  .contact {
+    margin: 10px;
+  }
+
+  .Address {
+    font-weight: 100;
+    font-size: small;
+    
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .sico {
+    padding : 4%;
+  }
